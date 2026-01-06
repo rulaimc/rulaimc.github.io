@@ -3,8 +3,8 @@ home: true
 title: Home
 heroImage: https://vuejs.press/images/hero.png
 actions:
-  - text: Get Started
-    link: /get-started.html
+  - text: 快速开始
+    link: /guide/MySql.html
     type: primary
 
   - text: Introduction
