@@ -30,6 +30,9 @@ theme: defaultTheme({
       '/guide/OpenWrt.md',
     ],
   },
+  
+  sidebarDepth: 0,
+
 }),
 
   bundler: webpackBundler(),
