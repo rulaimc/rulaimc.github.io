@@ -11,11 +11,11 @@ export default defineUserConfig({
 theme: defaultTheme({
   logo: 'https://vuejs.press/images/hero.png',
 
-  navbar: ['/', '/guide/Start'],
+  navbar: ['/', '/guide/MySQL'],
 
   sidebar: {
     '/guide/': [
-      '/guide/Start.md',
+      '/guide/MySQL.md',
       '/guide/Java.md',
       '/guide/Jvm.md',
       '/guide/Spring.md',

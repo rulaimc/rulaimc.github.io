@@ -4,7 +4,7 @@ title: Home
 heroImage: https://vuejs.press/images/hero.png
 actions:
   - text: 快速开始
-    link: /guide/Start.html
+    link: /guide/MySQL.html
     type: primary
 
   - text: Introduction
