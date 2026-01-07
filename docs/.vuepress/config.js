@@ -11,7 +11,7 @@ export default defineUserConfig({
 theme: defaultTheme({
   logo: 'https://vuejs.press/images/hero.png',
 
-  navbar: ['/', '/guide/MySQL'],
+  navbar: ['/'],
 
   sidebar: {
     '/guide/': [
@@ -30,7 +30,7 @@ theme: defaultTheme({
       '/guide/OpenWrt.md',
     ],
   },
-  
+
   sidebarDepth: 0,
 
 }),
