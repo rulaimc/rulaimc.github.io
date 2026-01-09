@@ -21,7 +21,6 @@ theme: defaultTheme({
       '/guide/Spring.md',
       '/guide/SpringBoot.md',
       '/guide/Redis.md',
-      '/guide/Redis分布式锁.md',
       '/guide/数据结构.md',
       '/guide/设计模式.md',
       '/guide/Linux.md',
@@ -31,6 +30,7 @@ theme: defaultTheme({
     ],
   },
 
+  //侧边栏目录展开深度
   sidebarDepth: 0,
 
 }),
