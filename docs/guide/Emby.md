@@ -1,11 +1,11 @@
 # Emby 伪站破解认证
 
-创建 CA 根证书
+创建 CA 根证书私钥
 ```shell
 openssl genrsa -out ca.key 4096
 ```
 
-创建CA根证书（自签名）
+用私钥生成 CA 根证书
 ```shell
 openssl req -x509 -new -key ca.key -days 3650 -sha256 \
 -subj "/C=JP/ST=Japan/L=Japan/O=Emby/CN=Emby-Root-CA" \
@@ -41,12 +41,12 @@ DNS.1 = mb3admin.com
 DNS.2 = *.mb3admin.com
 ```
 
-生成 CSR 中间文件（证书签名请求）
+生成 CSR 中间文件（签名请求）
 ```shell
 openssl req -new -key ssl.key -out ssl.csr -config openssl-san.cnf
 ```
 
-用 CA 根证书签名服务器 ssl 证书（核心步骤）
+用 CA 根证书签名服务器 ssl 证书
 ```shell
 openssl x509 -req \
 -in ssl.csr \
@@ -61,8 +61,8 @@ openssl x509 -req \
 ```
 
 ::: tip
-让浏览器/客户端信任（非常重要）必须做的一步，把 ca.pem 导入到：  
-Windows：受信任的根证书颁发机构（windows下复制ca.pem重命名为ca.crt直接双击安装）  
+让浏览器/客户端信任，要把根证书ca.pem导入各系统，若不导入Emby客户端会弹窗让你选择是否信任该证书  
+Windows：安装到受信任的根证书颁发机构，windows下复制ca.pem重命名为ca.crt直接双击安装  
 Android：安全 > 用户凭据  
 iOS：描述文件 / 设置 → 通用 → 关于 → 证书信任
 :::
