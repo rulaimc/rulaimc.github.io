@@ -26,7 +26,7 @@ theme: defaultTheme({
       '/guide/Linux.md',
       '/guide/Nginx.md',
       '/guide/vue.md',
-      '/guide/OpenWrt.md',
+      '/guide/Emby.md',
     ],
   },
 
