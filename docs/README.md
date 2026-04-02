@@ -1,7 +1,7 @@
 ---
 home: true
 title: Home
-heroImage: https://vuejs.press/images/hero.png
+heroImage: /img/head.jpg
 actions:
   - text: 快速开始
     link: /guide/MySQL.html

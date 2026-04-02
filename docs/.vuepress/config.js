@@ -9,7 +9,7 @@ export default defineUserConfig({
   description: '欢迎来到我梦的笔记文档空间',
 
 theme: defaultTheme({
-  logo: 'https://vuejs.press/images/hero.png',
+  logo: '/img/head.jpg',
 
   navbar: ['/'],
 
